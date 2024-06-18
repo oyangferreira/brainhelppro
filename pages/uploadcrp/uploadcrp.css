@@ -1,0 +1,85 @@
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { height } = Dimensions.get('window');
+
+const styles = StyleSheet.create({
+  background: {
+    flex: 1,
+    backgroundColor: 'white',
+  },
+  container: {
+    width: '80%',
+    justifyContent: 'center',
+    alignSelf: 'center',
+  },
+  backButton: {
+    position: 'absolute',
+    top: height * 0.05,
+  },
+  backIcon: {
+    width: 30,
+    height: 30,
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: '500',
+    color: '#1D1E1D',
+    top: height * 0.12,
+    fontFamily: 'Poppins_600SemiBold',
+  },
+  text: {
+    fontSize: 16,
+    color: '#6E6E6E',
+    fontFamily: 'Poppins_400Regular',
+    top: height * 0.15,
+    textAlign: 'justify',
+    alignItems: 'center',
+  },
+  imageContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    top: height * 0.20,
+  },
+  crpImage: {
+    width: '80%',
+    marginTop: '10%',
+    height: undefined,
+    aspectRatio: 4 / 3,
+    resizeMode: 'contain',
+  },
+  selectedImage: {
+    width: '100%',
+    height: undefined,
+    aspectRatio: 4 / 3,
+    marginTop: 20,
+    borderRadius: 10,
+  },
+  buttonContainer: {
+    position: 'absolute',
+    bottom: height * 0.05,
+    left: 0,
+    right: 0,
+    alignItems: 'center',
+  },
+  nextButton: {
+    backgroundColor: '#FF7800',
+    paddingVertical: 10,
+    borderRadius: 25,
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3,
+    width: '80%',
+    alignSelf: 'center',
+  },
+  nextButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    textAlign: 'center',
+    padding: 1,
+    fontFamily: 'Poppins_600SemiBold',
+  },
+});
+
+export default styles;

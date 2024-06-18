@@ -1,0 +1,162 @@
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { height } = Dimensions.get('window');
+
+const styles = StyleSheet.create({
+  background: {
+    flexGrow: 1,
+    backgroundColor: 'white',
+  },
+  container: {
+    width: '80%',
+    justifyContent: 'center',
+    alignSelf: 'center',
+  },
+  backButton: {
+    position: 'absolute',
+    top: height * 0.05,
+  },
+  backIcon: {
+    width: 30,
+    height: 30,
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: '500',
+    color: '#1D1E1D',
+    marginTop: height * 0.12,
+    fontFamily: 'Poppins_600SemiBold',
+  },
+  subtitle: {
+    fontSize: 14,
+    color: '#6E6E6E',
+    marginTop: height * 0.01,
+    fontFamily: 'Poppins_400Regular',
+  },
+  daysContainer: {
+  marginTop: height * 0.02,
+  marginBottom: height * 0.1, // Evita que os dias ultrapassem a área do botão
+  paddingBottom: height * 0.2, // Espaçamento inferior para evitar que os horários ultrapassem o botão
+},
+  dayRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginVertical: 10,
+  },
+  dayButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  dayLabel: {
+    fontSize: 16,
+    color: '#6E6E6E',
+    fontFamily: 'Poppins_400Regular',
+  },
+  addIcon: {
+    width: 24,
+    height: 24,
+  },
+  timeRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginVertical: 5,
+  },
+  timeLabel: {
+    fontSize: 14,
+    color: '#6E6E6E',
+    fontFamily: 'Poppins_600SemiBold',
+  },
+  deleteIcon: {
+    width: 20,
+    height: 20,
+    marginLeft: 10,
+  },
+  divider: {
+    borderBottomColor: '#E5E7E7',
+    borderBottomWidth: 1,
+    marginVertical: 10,
+  },
+  modalBackground: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  },
+  modalContainer: {
+    width: '80%',
+    backgroundColor: 'white',
+    borderRadius: 10,
+    padding: 20,
+    alignItems: 'center',
+  },
+  modalTitle: {
+    fontSize: 20,
+    marginBottom: 20,
+    fontFamily: 'Poppins_600SemiBold',
+  },
+  input: {
+    width: '100%',
+    borderWidth: 1,
+    borderColor: '#E5E7E7',
+    borderRadius: 18,
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    fontSize: 16,
+    color: '#6E6E6E',
+    fontFamily: 'Poppins_400Regular',
+    marginBottom: 20,
+    textAlign: 'center',
+  },
+  confirmButton: {
+    backgroundColor: '#FF7800',
+    paddingVertical: 10,
+    borderRadius: 25,
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3,
+    width: '80%',
+    alignItems: 'center',
+  },
+  confirmButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    textAlign: 'center',
+    padding: 1,
+    fontFamily: 'Poppins_600SemiBold',
+  },
+  buttonContainer: {
+    position: 'absolute',
+    bottom: height * 0.05,
+    left: 0,
+    right: 0,
+    alignItems: 'center',
+  },
+  nextButton: {
+    backgroundColor: '#FF7800',
+    paddingVertical: 10,
+    borderRadius: 25,
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3,
+    width: '80%',
+    alignSelf: 'center',
+  },
+  enabledButton: {
+    backgroundColor: '#FF7800',
+  },
+  nextButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    textAlign: 'center',
+    padding: 1,
+    fontFamily: 'Poppins_600SemiBold',
+  },
+});
+
+export default styles;
